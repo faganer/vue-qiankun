@@ -13,10 +13,15 @@
 git clone https://github.com/faganer/vue-qiankun.git
 ```
 
-设置淘宝npm源
+设置淘宝npm源：
 
 ```bash
 npm config set registry http://registry.npm.taobao.org/
+```
+
+安装依赖：
+
+```bash
 cd main-app
 npm install
 cd ../sub-app-vue
