@@ -1,14 +1,27 @@
 <template>
   <div id="app">
-    <p class="nav">主应用导航：<a href="/">home</a>
-      <a href="/about">about</a>
+    <div class="nav-container">
+      <p class="nav">主应用导航：<a href="/">Home</a>
+        <a href="/about">About</a>
         <!-- 子应用 vue app -->
-      <a href="/vue">vue</a></p>
-      <!-- 主应用容器 -->
+        <a href="/vue">Vue</a>（a标签跳转）</p>
+      <p class="nav">主应用导航：
+        <router-link :to="{name: 'Home'}">Home</router-link>
+        <router-link :to="{name: 'About'}">About</router-link>
+        <!-- 子应用 vue app -->
+        <router-link :to="{path: 'vue'}">Vue</router-link>（router-link跳转）
+      </p>
+    </div>
+    <!-- .nav-container -->
+
+    <!-- 主应用容器 -->
     <router-view></router-view>
-      <!-- 子应用容器 -->
+
+    <!-- 子应用容器 -->
     <div id="container"></div>
+
   </div>
+  <!-- #app -->
 </template>
 <style>
   #app {
