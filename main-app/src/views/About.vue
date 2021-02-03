@@ -1,5 +1,11 @@
 <template>
   <div class="about">
-    <h1>This is an about page</h1>
+    <p>我是主应用路由：<b>about</b></p>
   </div>
 </template>
+<style scoped>
+
+  b {
+    color: #42b983;
+  }
+  </style>
